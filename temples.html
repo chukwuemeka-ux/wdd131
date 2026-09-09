@@ -1,54 +1,103 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
 
-    <h2>Temple Gallery</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album">
+    <meta name="author" content="Sunday Chukwuemeka Okpara">
 
-    <div class="gallery">
+    <title>Temple Album</title>
 
-        <figure>
-            <img src="images/temple1.jpg" alt="Salt Lake Temple" loading="lazy">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-        <figure>
-            <img src="images/temple2.jpg" alt="Rome Italy Temple" loading="lazy">
-            <figcaption>Rome Italy Temple</figcaption>
-        </figure>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
 
-        <figure>
-            <img src="images/temple3.jpg" alt="Accra Ghana Temple" loading="lazy">
-            <figcaption>Accra Ghana Temple</figcaption>
-        </figure>
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
 
-        <figure>
-            <img src="images/temple4.jpg" alt="Nairobi Kenya Temple" loading="lazy">
-            <figcaption>Nairobi Kenya Temple</figcaption>
-        </figure>
+<body>
 
-        <figure>
-            <img src="images/temple5.jpg" alt="Tokyo Japan Temple" loading="lazy">
-            <figcaption>Tokyo Japan Temple</figcaption>
-        </figure>
+    <header>
+        <h1>Temple Album</h1>
 
-        <figure>
-            <img src="images/temple6.jpg" alt="Manila Philippines Temple" loading="lazy">
-            <figcaption>Manila Philippines Temple</figcaption>
-        </figure>
+        <button id="menu" aria-label="Open navigation">☰</button>
 
-        <figure>
-            <img src="images/temple7.jpg" alt="Johannesburg South Africa Temple" loading="lazy">
-            <figcaption>Johannesburg South Africa Temple</figcaption>
-        </figure>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
 
-        <figure>
-            <img src="images/temple8.jpg" alt="Aba Nigeria Temple" loading="lazy">
-            <figcaption>Aba Nigeria Temple</figcaption>
-        </figure>
+    <main>
 
-        <figure>
-            <img src="images/temple9.jpg" alt="Kinshasa DR Congo Temple" loading="lazy">
-            <figcaption>Kinshasa DR Congo Temple</figcaption>
-        </figure>
+        <h1>Temple Gallery</h1>
 
-    </div>
+        <div class="gallery">
 
-</main>
+            <figure>
+                <img src="images/temple1.jpg" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple2.jpg" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple3.jpg" alt="Accra Ghana Temple" loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple4.jpg" alt="Nairobi Kenya Temple" loading="lazy">
+                <figcaption>Nairobi Kenya Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple5.jpg" alt="Tokyo Japan Temple" loading="lazy">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple6.jpg" alt="Manila Philippines Temple" loading="lazy">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple7.jpg" alt="Johannesburg South Africa Temple" loading="lazy">
+                <figcaption>Johannesburg South Africa Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple8.jpg" alt="Aba Nigeria Temple" loading="lazy">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple9.jpg" alt="Kinshasa DR Congo Temple" loading="lazy">
+                <figcaption>Kinshasa DR Congo Temple</figcaption>
+            </figure>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🌺 Sunday Chukwuemeka Okpara 🌺 Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
