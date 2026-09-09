@@ -1,0 +1,89 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #008753;
+    --secondary-color: #ffffff;
+    --accent-color: #1f1f1f;
+    --background-color: #f4f4f4;
+    --card-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-color);
+    color: var(--accent-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Hero Image */
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Cards */
+.card {
+    background: var(--card-color);
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin: .5rem 0;
+}
+
+/* Weather Icon (Mobile Only) */
+.weather-icon {
+    width: 60px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: .3rem 0;
+}

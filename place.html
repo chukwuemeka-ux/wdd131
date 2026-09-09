@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage about Nigeria">
+    <meta name="author" content="Sunday Chukwuemeka Okpara">
+
+    <title>Beautiful Nigeria</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+
+        <picture>
+            <source srcset="images/nigeria-large.webp" media="(min-width: 768px)">
+            <img src="images/nigeria-small.webp" alt="Beautiful scenery of Nigeria" width="1200" height="600">
+        </picture>
+
+        <section class="card">
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong> 923,768 km²</p>
+            <p><strong>Population:</strong> 223 Million</p>
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+            <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+            <p><strong>Time Zone:</strong> UTC +1</p>
+            <p><strong>Calling Code:</strong> +234</p>
+            <p><strong>Internet TLD:</strong> .ng</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temperature">8</span>°C</p>
+            <p><strong>Conditions:</strong> Cloudy</p>
+            <p><strong>Wind:</strong> <span id="windspeed">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🌺 Sunday Chukwuemeka Okpara 🌺 Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
