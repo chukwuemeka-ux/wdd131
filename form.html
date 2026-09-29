@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a product review with a rating, installation date, useful features, and optional comments.">
+  <meta name="author" content="Chukwuemeka Okpara Sunday">
+  <title>Product Review | WDD 131</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header><h1>Product Review</h1><p>Tell us about your experience</p></header>
+  <main>
+    <form action="review.html" method="get">
+      <p class="required-note"><span aria-hidden="true">*</span> Required fields</p>
+      <div class="field">
+        <label for="product">Product Name <span class="required" aria-hidden="true">*</span></label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+      <fieldset class="field">
+        <legend>Overall Rating <span class="required" aria-hidden="true">*</span></legend>
+        <div class="rating">
+          <label for="rating1"><span class="stars" aria-hidden="true">★</span><input id="rating1" type="radio" name="rating" value="1" required><span class="sr-only">1 star</span></label>
+          <label for="rating2"><span class="stars" aria-hidden="true">★★</span><input id="rating2" type="radio" name="rating" value="2" required><span class="sr-only">2 stars</span></label>
+          <label for="rating3"><span class="stars" aria-hidden="true">★★★</span><input id="rating3" type="radio" name="rating" value="3" required><span class="sr-only">3 stars</span></label>
+          <label for="rating4"><span class="stars" aria-hidden="true">★★★★</span><input id="rating4" type="radio" name="rating" value="4" required><span class="sr-only">4 stars</span></label>
+          <label for="rating5"><span class="stars" aria-hidden="true">★★★★★</span><input id="rating5" type="radio" name="rating" value="5" required><span class="sr-only">5 stars</span></label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="installation-date">Date of Installation <span class="required" aria-hidden="true">*</span></label>
+        <input type="date" id="installation-date" name="installation-date" required>
+      </div>
+      <fieldset class="field">
+        <legend>Which features did you find useful? <span class="optional">(Check all that apply)</span></legend>
+        <div class="checklist">
+          <label><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
+          <label><input type="checkbox" id="ease-of-use" name="features" value="ease-of-use"> Ease of Use</label>
+          <label><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
+          <label><input type="checkbox" id="design" name="features" value="design"> Design</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+        <textarea id="written-review" name="written-review" rows="5" placeholder="Share your experience..."></textarea>
+      </div>
+      <div class="field">
+        <label for="username">Your Name <span class="optional">(Optional)</span></label>
+        <input type="text" id="username" name="username" autocomplete="name" placeholder="Your name">
+      </div>
+      <input class="submit-button" type="submit" value="Post Review">
+    </form>
+  </main>
+  <footer><p>© <span id="currentyear">2026</span> Chukwuemeka Okpara Sunday | Nigeria</p><p id="lastModified"></p></footer>
+</body>
+</html>
