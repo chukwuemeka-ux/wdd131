@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore solar installation, electrical wiring, CCTV and solar maintenance services from Prince Motherland Solar and Electrical Solutions.">
+  <title>Services | Prince Motherland Solar &amp; Electrical Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/services.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html" aria-label="Prince Motherland homepage">
+        <span class="brand-name">PRINCE MOTHERLAND</span>
+        <span class="brand-subtitle">Solar &amp; Electrical Solutions</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-intro container" aria-labelledby="page-title">
+      <p class="eyebrow">What we do</p>
+      <h1 id="page-title">Our Services</h1>
+      <p>Explore our solar, electrical and security solutions. Choose a category to find a service that matches your needs.</p>
+    </section>
+    <section class="services-section" aria-labelledby="browse-title">
+      <div class="container">
+        <h2 id="browse-title">Browse Services</h2>
+        <div class="filter-bar" role="group" aria-label="Filter services">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All Services</button>
+          <button class="filter-button" type="button" data-filter="solar" aria-pressed="false">Solar</button>
+          <button class="filter-button" type="button" data-filter="electrical" aria-pressed="false">Electrical</button>
+          <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Security</button>
+        </div>
+        <p id="filter-status" class="filter-status" role="status" aria-live="polite"></p>
+        <div id="services-grid" class="service-grid"></div>
+        <noscript><p>Enable JavaScript to browse the interactive service cards. We provide solar installation, electrical wiring, CCTV installation and solar maintenance.</p></noscript>
+      </div>
+    </section>
+    <section class="container services-cta" aria-labelledby="cta-title">
+      <h2 id="cta-title">Need help choosing a service?</h2>
+      <p>Tell us about your property and the work you need.</p>
+      <a class="button" href="contact.html">Request a Quote</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Prince Motherland Solar &amp; Electrical Solutions</p>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+</body>
+</html>

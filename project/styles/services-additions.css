@@ -1,0 +1,13 @@
+/* Append these rules to your EXISTING styles/project.css. */
+.page-intro { padding-block: 3.5rem; }
+.page-intro h1 { font-size: clamp(2rem, 5vw, 3.4rem); margin: .3rem 0 1rem; }
+.page-intro > p:last-child { max-width: 65ch; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1.5rem 0 1rem; }
+.filter-button { font: 600 1rem 'Open Sans', sans-serif; cursor: pointer; border: 2px solid var(--navy); border-radius: .45rem; background: white; color: var(--navy); padding: .65rem 1rem; }
+.filter-button[aria-pressed="true"] { background: var(--navy); color: white; }
+.filter-button:hover { border-color: #856100; }
+.filter-button:focus-visible { outline: 3px solid #856100; outline-offset: 3px; }
+.filter-status { min-height: 1.6rem; margin: 0 0 1.2rem; }
+.service-card .text-link { margin-top: 1rem; }
+.services-cta { text-align: center; padding-block: 3.5rem; }
+.services-cta h2 { margin-bottom: .5rem; }

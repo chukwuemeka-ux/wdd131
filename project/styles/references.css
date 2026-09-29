@@ -1,0 +1,133 @@
+/* W06 Project: References Page */
+
+/* Header and navigation */
+.reference-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.reference-header .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.reference-header .brand strong {
+    color: #f4b400;
+}
+
+.reference-header .brand span {
+    color: #ffffff;
+}
+
+.reference-header nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.reference-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.reference-header nav a:hover,
+.reference-header nav a:focus-visible {
+    color: #f4b400;
+    text-decoration: underline;
+}
+
+/* Main references content */
+.references-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem;
+}
+
+.references-main h1 {
+    margin-bottom: 0.75rem;
+    color: #102a43;
+}
+
+.references-main h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #102a43;
+}
+
+.references-main ol {
+    padding-left: 1.5rem;
+}
+
+.references-main li {
+    margin: 1.5rem 0;
+    padding-left: 0.5rem;
+    overflow-wrap: anywhere;
+}
+
+.references-main li p {
+    margin: 0.75rem 0;
+    line-height: 1.6;
+}
+
+.references-main a {
+    color: #174f80;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.references-main a:hover {
+    color: #102a43;
+}
+
+/* Keyboard accessibility */
+.references-main :focus-visible,
+.reference-header :focus-visible,
+.reference-footer :focus-visible {
+    outline: 3px solid #f4b400;
+    outline-offset: 3px;
+}
+
+/* Footer */
+.reference-footer {
+    background: #102a43;
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.reference-footer p {
+    margin: 0.5rem 0;
+}
+
+.reference-footer a {
+    color: #f4b400;
+    text-underline-offset: 0.15em;
+}
+
+.reference-footer a:hover {
+    color: #ffffff;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .reference-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reference-header nav {
+        gap: 1rem;
+    }
+
+    .references-main {
+        padding: 2rem 1rem;
+    }
+}
